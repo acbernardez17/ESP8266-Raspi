@@ -13,8 +13,8 @@
 #include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 
-const char* ssid = "SSID";
-const char* password = "XXXXXXXX";
+const char* ssid = "TP-Link_34E8";
+const char* password = "71028309";
 
 WiFiUDP udpConn; //UDP-CONNECTION var
 unsigned int localUdpPort = 9999; //INPUT PORT 

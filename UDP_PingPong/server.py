@@ -34,7 +34,7 @@ sock.bind(('', UDP_PORT)) # OUTPUT SERVER PORT
 sock.sendto(MESSAGE, (UDP_TARGET_IP, UDP_PORT)) #Sending an initial datagram to activate ESP8266
 
 while (True):
-    data = sock.recvfrom(1024) #Parsing inputpacket (1024 Bytes of size)
+    data, addr = sock.recvfrom(1024) #Parsing inputpacket (1024 Bytes of size)
     print("Received Message: %s" % data)
     time.sleep(2)
     sock.sendto(MESSAGE, (UDP_TARGET_IP, UDP_PORT)) # Replay back to ESP8266
